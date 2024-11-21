@@ -1,0 +1,235 @@
+:root {
+    --text_important: rgba(0, 0, 0, 0.65);
+    --text_secondary: rgba(0, 0, 0, 0.80);
+    --text_general: rgba(0, 0, 0, 1);
+    --background_important: rgba(255, 255, 255, 0.6);
+    --background_general: rgba(255, 255, 255, 0.2);
+    --borderless: 0px solid rgb(0, 0, 0);
+    --outline_general: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text_important: rgba(255, 255, 255, 0.65);
+        --text_secondary: rgba(255, 255, 255, 0.80);
+        --text_general: rgba(255, 255, 255, 1);
+        --background_important: rgba(0, 0, 0, 0.6);
+        --background_general: rgba(0, 0, 0, 0.2);
+        --borderless: 0px solid rgb(0, 0, 0);
+        --outline_general: 2px solid rgba(0, 0, 0, 0.2);
+    }
+}
+
+
+html {
+    background: url("background.jpg") no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Courier New', Courier;
+}
+
+body {
+    transition: 0.2s;
+    font-size: 18px;
+    background-color: var(--background_general);
+    margin: 0px;
+    padding: 8px
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 400%;
+    color: var(--text_important);
+    background-color: var(--background_important);
+    border-radius: 25px;
+    margin: 2px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    width: max-content;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 330%;
+    color: var(--text_important);
+    background-color: var(--background_important);
+    border-radius: 22px;
+    margin: 2px;
+    margin-top: 30px;
+    padding: 10px 20px;
+    width: max-content;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 260%;
+    color: var(--text_important);
+    background-color: var(--background_important);
+    border-radius: 20px;
+    margin: 2px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    width: max-content;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 220%;
+    color: var(--text_secondary);
+    background-color: var(--background_general);
+    border-radius: 15px;
+    margin: 2px;
+    margin-top: 5px;
+    padding: 10px 20px;
+    width: max-content;
+}
+
+h5 {
+    font-weight: bold;
+    font-size: 180%;
+    color: var(--text_secondary);
+    background-color: var(--background_general);
+    border-radius: 12px;
+    margin: 2px;
+    margin-top: 5px;
+    padding: 10px 20px;
+    width: max-content;
+}
+
+h6 {
+    font-weight: bold;
+    font-size: 140%;
+    color: var(--text_secondary);
+    background-color: var(--background_general);
+    border-radius: 10px;
+    margin: 2px;
+    margin-top: 5px;
+    padding: 10px 20px;
+    width: max-content;
+}
+
+p:not(blockquote p) {
+    font-size: 100%;
+    color: var(--text_general);
+    background-color: var(--background_general);
+    border-radius: 5px;
+    margin: 10px 20px;
+    padding: 10px 15px;
+}
+
+blockquote {
+    font-size: 100%;
+    color: var(--text_general);
+    background-color: var(--background_general);
+    border-radius: 5px;
+    margin: 10px 20px;
+    padding: 5px 30px;
+}
+
+table {
+    border-collapse: separate;
+    background-color: var(--background_general);
+    border: var(--borderless);
+    border-radius: 5px;
+    margin: 10px 20px;
+    padding: 10px 30px;
+}
+
+thead {
+    font-weight: bold;
+    font-size: 110%;
+    color: var(--text_secondary);
+    border: var(--borderless);
+    background-color: var(--background_general);
+    border-radius: 5px;
+    margin: 2px;
+    padding: 2px;
+}
+
+tbody {
+    font-size: 90%;
+    color: var(--text_secondary);
+    border: var(--borderless);
+    background-color: var(--background_general);
+    border-radius: 5px;
+    margin: 2px;
+    padding: 2px;
+
+}
+
+th, td, tr {
+    border: var(--borderless);
+    border-radius: 5px;
+    margin: 2px;
+    padding: 10px;
+}
+
+ol:not(ol ol), ul:not(ul ul) {
+    font-size: 100%;
+    list-style-position: inside;
+    color: var(--text_secondary);
+    background-color: var(--background_general);
+    border-radius: 5px;
+    margin: 10px 20px;
+    padding: 10px 15px;
+}
+
+code:not(pre code) {
+    font-family: 'Courier', Courier, monospace;
+    font-size: 90%;
+    color: var(--text_secondary);
+    background-color: var(--background_general);
+    border-radius: 5px;
+    display: inline-block;
+    margin: 2px;
+    padding: 2px 4px;
+}
+
+pre {
+    font-family: 'Courier', Courier, monospace;
+    font-size: 90%;
+    color: var(--text_secondary);
+    background-color: var(--background_general);
+    border-radius: 5px;
+    margin: 10px 20px;
+    padding: 4px 6px;
+}
+
+hr {
+    background-color: var(--background_important);
+    border: var(--borderless);
+    border-radius: 6px;
+    margin: 15px 2px;
+    padding: 3px 3px;
+}
+
+a:link {
+    color: var(--text_general);
+    outline: var(--outline_general);
+    text-decoration: none;
+    outline-offset: -3px;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 2px 6px 0px 6px;
+}
+
+a:visited {
+    color: var(--text_important);
+    outline: var(--outline_general);
+    text-decoration: none;
+    outline-offset: -3px;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 2px 6px 0px 6px;
+}
+
+a:hover {
+    background-color: var(--background_important);
+    outline: var(--outline_general);
+    text-decoration: none;
+    outline-offset: -3px;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 2px 6px 0px 6px;
+}
