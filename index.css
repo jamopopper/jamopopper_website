@@ -22,7 +22,7 @@
 
 
 html {
-    background: url("background.jpg") no-repeat;
+    background: url("images/background.jpg") no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
