@@ -26,22 +26,22 @@ body {
 
 h1 {
     font-weight: bold;
-    color: rgba(255, 255, 255, 0.8);
-    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 25px;
     margin: auto;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     padding: 10px 20px;
     width: max-content;
 }
 
 h2 {
     font-weight: bold;
-    color: rgba(255, 255, 255, 0.8);
-    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 25px;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding: 10px 20px;
     width: max-content;
 
@@ -49,8 +49,8 @@ h2 {
 
 h3 {
     font-weight: bold;
-    color: rgba(255, 255, 255, 0.8);
-    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 25px;
     margin: auto;
     margin-bottom: 20px;
@@ -72,7 +72,7 @@ p {
 .image_flex {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
     align-content: center;
