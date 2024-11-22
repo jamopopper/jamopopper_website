@@ -8,45 +8,20 @@
     --outline_general: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --text_important: rgba(255, 255, 255, 0.65);
-        --text_secondary: rgba(255, 255, 255, 0.80);
-        --text_general: rgba(255, 255, 255, 1);
-        --background_important: rgba(0, 0, 0, 0.6);
-        --background_general: rgba(0, 0, 0, 0.2);
-        --borderless: 0px solid rgb(0, 0, 0);
-        --outline_general: 2px solid rgba(0, 0, 0, 0.2);
-    }
-}
-
-.image_flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.image_flex img {
-    max-width: 100%;
-    height: auto;
-}
-
 html {
     background: url("images/background.jpeg") no-repeat;
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: 'Courier New', Courier;
+    font-family: 'Courier', Courier, monospace;
 }
 
 body {
     transition: 0.2s;
     font-size: 18px;
-    background-color: var(--background_general);
-    margin: 0px;
-    padding: 8px
+    margin: 5%;
+    padding: 8px;
 }
 
 h1 {
@@ -54,10 +29,9 @@ h1 {
     color: var(--text_important);
     background-color: var(--background_important);
     border-radius: 25px;
-    margin: 2px;
-    margin-top: 40px;
+    margin: auto;
+    margin-bottom: 40px;
     padding: 10px 20px;
-    text-align: center;
     width: max-content;
 }
 
@@ -66,10 +40,9 @@ h2 {
     color: var(--text_important);
     background-color: var(--background_important);
     border-radius: 22px;
-    margin: 2px;
-    margin-top: 30px;
+    margin: auto;
+    margin-bottom: 30px;
     padding: 10px 20px;
-    text-align: center;
     width: max-content;
 }
 
@@ -78,97 +51,12 @@ h3 {
     color: var(--text_important);
     background-color: var(--background_important);
     border-radius: 20px;
-    margin: 2px;
-    margin-top: 20px;
-    padding: 10px 20px;
-    text-align: center;
-    width: max-content;
-}
-
-h4 {
-    font-weight: bold;
-    color: var(--text_secondary);
-    background-color: var(--background_general);
-    border-radius: 15px;
-    margin: 2px;
-    margin-top: 5px;
+    margin: auto;
+    margin-bottom: 20px;
     padding: 10px 20px;
     width: max-content;
 }
 
-h5 {
-    font-weight: bold;
-    color: var(--text_secondary);
-    background-color: var(--background_general);
-    border-radius: 12px;
-    margin: 2px;
-    margin-top: 5px;
-    padding: 10px 20px;
-    width: max-content;
-}
-
-h6 {
-    font-weight: bold;
-    color: var(--text_secondary);
-    background-color: var(--background_general);
-    border-radius: 10px;
-    margin: 2px;
-    margin-top: 5px;
-    padding: 10px 20px;
-    width: max-content;
-}
-
-p:not(blockquote p) {
-    color: var(--text_general);
-    background-color: var(--background_general);
-    border-radius: 5px;
-    margin: 10px 20px;
-    padding: 10px 15px;
-}
-
-blockquote {
-    color: var(--text_general);
-    background-color: var(--background_general);
-    border-radius: 5px;
-    margin: 10px 20px;
-    padding: 5px 30px;
-}
-
-table {
-    border-collapse: separate;
-    background-color: var(--background_general);
-    border: var(--borderless);
-    border-radius: 5px;
-    margin: 10px 20px;
-    padding: 10px 30px;
-}
-
-thead {
-    font-weight: bold;
-    color: var(--text_secondary);
-    border: var(--borderless);
-    background-color: var(--background_general);
-    border-radius: 5px;
-    margin: 2px;
-    padding: 2px;
-}
-
-tbody {
-    color: var(--text_secondary);
-    border: var(--borderless);
-    background-color: var(--background_general);
-    border-radius: 5px;
-    margin: 2px;
-    padding: 2px;
-
-}
-
-th, td, tr {
-    border: var(--borderless);
-    border-radius: 5px;
-    margin: 2px;
-    padding: 10px;
-}
 
 ol:not(ol ol), ul:not(ul ul) {
     list-style-position: inside;
@@ -177,33 +65,6 @@ ol:not(ol ol), ul:not(ul ul) {
     border-radius: 5px;
     margin: 10px 20px;
     padding: 10px 15px;
-}
-
-code:not(pre code) {
-    font-family: 'Courier', Courier, monospace;
-    color: var(--text_secondary);
-    background-color: var(--background_general);
-    border-radius: 5px;
-    display: inline-block;
-    margin: 2px;
-    padding: 2px 4px;
-}
-
-pre {
-    font-family: 'Courier', Courier, monospace;
-    color: var(--text_secondary);
-    background-color: var(--background_general);
-    border-radius: 5px;
-    margin: 10px 20px;
-    padding: 4px 6px;
-}
-
-hr {
-    background-color: var(--background_important);
-    border: var(--borderless);
-    border-radius: 6px;
-    margin: 15px 2px;
-    padding: 3px 3px;
 }
 
 a:link:not(:has(img)) {
