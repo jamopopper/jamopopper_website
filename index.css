@@ -34,7 +34,7 @@
 
 @media screen and (max-width: 600px) {
     .image_flex img {
-        flex: 0 0 80%;
+        flex: 0 0 90%;
     }
 }
 
