@@ -32,7 +32,7 @@
     flex: 0 0 100px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     .image_flex img {
         flex: 0 0 80%;
     }
@@ -56,10 +56,8 @@ body {
 
 h1 {
     font-weight: bold;
-    font-size: 400%;
     color: var(--text_important);
     background-color: var(--background_important);
-    
     border-radius: 25px;
     margin: 2px;
     margin-top: 40px;
@@ -69,7 +67,6 @@ h1 {
 
 h2 {
     font-weight: bold;
-    font-size: 330%;
     color: var(--text_important);
     background-color: var(--background_important);
     border-radius: 22px;
@@ -81,7 +78,6 @@ h2 {
 
 h3 {
     font-weight: bold;
-    font-size: 260%;
     color: var(--text_important);
     background-color: var(--background_important);
     border-radius: 20px;
@@ -93,7 +89,6 @@ h3 {
 
 h4 {
     font-weight: bold;
-    font-size: 220%;
     color: var(--text_secondary);
     background-color: var(--background_general);
     border-radius: 15px;
@@ -105,7 +100,6 @@ h4 {
 
 h5 {
     font-weight: bold;
-    font-size: 180%;
     color: var(--text_secondary);
     background-color: var(--background_general);
     border-radius: 12px;
@@ -117,7 +111,6 @@ h5 {
 
 h6 {
     font-weight: bold;
-    font-size: 140%;
     color: var(--text_secondary);
     background-color: var(--background_general);
     border-radius: 10px;
@@ -128,7 +121,6 @@ h6 {
 }
 
 p:not(blockquote p) {
-    font-size: 100%;
     color: var(--text_general);
     background-color: var(--background_general);
     border-radius: 5px;
@@ -137,7 +129,6 @@ p:not(blockquote p) {
 }
 
 blockquote {
-    font-size: 100%;
     color: var(--text_general);
     background-color: var(--background_general);
     border-radius: 5px;
@@ -156,7 +147,6 @@ table {
 
 thead {
     font-weight: bold;
-    font-size: 110%;
     color: var(--text_secondary);
     border: var(--borderless);
     background-color: var(--background_general);
@@ -166,7 +156,6 @@ thead {
 }
 
 tbody {
-    font-size: 90%;
     color: var(--text_secondary);
     border: var(--borderless);
     background-color: var(--background_general);
@@ -184,7 +173,6 @@ th, td, tr {
 }
 
 ol:not(ol ol), ul:not(ul ul) {
-    font-size: 100%;
     list-style-position: inside;
     color: var(--text_secondary);
     background-color: var(--background_general);
@@ -195,7 +183,6 @@ ol:not(ol ol), ul:not(ul ul) {
 
 code:not(pre code) {
     font-family: 'Courier', Courier, monospace;
-    font-size: 90%;
     color: var(--text_secondary);
     background-color: var(--background_general);
     border-radius: 5px;
@@ -206,7 +193,6 @@ code:not(pre code) {
 
 pre {
     font-family: 'Courier', Courier, monospace;
-    font-size: 90%;
     color: var(--text_secondary);
     background-color: var(--background_general);
     border-radius: 5px;
