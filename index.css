@@ -32,7 +32,6 @@ h1 {
     margin: auto;
     margin-bottom: 40px;
     padding: 10px 20px;
-    width: max-content;
 }
 
 h2 {
@@ -43,7 +42,6 @@ h2 {
     margin: auto;
     margin-bottom: 30px;
     padding: 10px 20px;
-    width: max-content;
 }
 
 h3 {
@@ -54,7 +52,10 @@ h3 {
     margin: auto;
     margin-bottom: 20px;
     padding: 10px 20px;
-    width: max-content;
+}
+
+img {
+    width: auto;
 }
 
 
