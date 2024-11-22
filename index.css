@@ -81,7 +81,7 @@ p {
 
     max-width: 90%;
     min-width: 25%;
-    height: min-content;
+    max-height: 70%;
 }
 
 img {
