@@ -55,7 +55,9 @@ h3 {
 }
 
 img {
-    width: auto;
+    max-width: 80%;
+    margin: auto;
+    display: block;
 }
 
 
