@@ -78,7 +78,7 @@ p {
     align-content: center;
 
     width: 100%;
-    height: fit-content;
+    height: min-content;
 }
 
 img {
