@@ -18,7 +18,7 @@ html {
 }
 
 body {
-    transition: 0.2s;
+    transition: 1s;
     font-size: 18px;
     margin: 5%;
     padding: 8px;
@@ -26,36 +26,52 @@ body {
 
 h1 {
     font-weight: bold;
-    color: var(--text_important);
-    background-color: var(--background_important);
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 25px;
     margin: auto;
     margin-bottom: 40px;
     padding: 10px 20px;
+    width: max-content;
 }
 
 h2 {
     font-weight: bold;
-    color: var(--text_important);
-    background-color: var(--background_important);
-    border-radius: 22px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
     margin: auto;
     margin-bottom: 30px;
     padding: 10px 20px;
+    width: max-content;
+
 }
 
 h3 {
     font-weight: bold;
-    color: var(--text_important);
-    background-color: var(--background_important);
-    border-radius: 20px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
     margin: auto;
     margin-bottom: 20px;
     padding: 10px 20px;
+    width: max-content;
+
 }
 
+p {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    width: max-content;
+}  
+
 img {
-    max-width: 80%;
+    max-width: 25%;
+    width: auto;
     margin: auto;
     display: block;
 }
