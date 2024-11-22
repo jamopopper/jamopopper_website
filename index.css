@@ -20,9 +20,26 @@
     }
 }
 
+.image_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.image_flex img {
+    flex: 0 0 200px;
+}
+
+@media screen and (max-width: 480px) {
+    .image_flex img {
+        flex: 0 0 80%;
+    }
+}
 
 html {
-    background: url("images/background.jpg") no-repeat;
+    background: url("images/background.jpeg") no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
