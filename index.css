@@ -29,13 +29,8 @@
 }
 
 .image_flex img {
-    flex: 0 0 100px;
-}
-
-@media screen and (width: 600px) {
-    .image_flex img {
-        flex: 0 0 90%;
-    }
+    max-width: 100%;
+    height: auto;
 }
 
 html {
@@ -211,7 +206,7 @@ hr {
     padding: 3px 3px;
 }
 
-a:link {
+a:link:not(:has(img)) {
     color: var(--text_general);
     outline: var(--outline_general);
     text-decoration: none;
@@ -221,7 +216,7 @@ a:link {
     padding: 2px 6px 0px 6px;
 }
 
-a:visited {
+a:visited:not(:has(img)) {
     color: var(--text_important);
     outline: var(--outline_general);
     text-decoration: none;
@@ -231,7 +226,7 @@ a:visited {
     padding: 2px 6px 0px 6px;
 }
 
-a:hover {
+a:hover:not(:has(img)) {
     background-color: var(--background_important);
     outline: var(--outline_general);
     text-decoration: none;
