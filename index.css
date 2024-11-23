@@ -10,7 +10,7 @@
 
 html {
     background: url("images/background.jpeg") no-repeat;
-    background-position: center center;
+    background-position: bottom center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -87,6 +87,7 @@ p {
 
 img {
     max-width: 25vw;
+    max-height: 45vh;
 }
 
 img:hover {
