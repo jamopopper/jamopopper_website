@@ -80,13 +80,13 @@ p {
     align-items: center;
     align-content: center;
 
-    max-width: 90%;
-    min-width: 10%;
-    max-height: 50%;
+    max-width: 90vw;
+    min-width: 25vw;
+    max-height: 60vh;
 }
 
 img {
-    max-width: 200px;
+    max-width: 40vw;
 }
 
 img:hover {
