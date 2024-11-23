@@ -82,11 +82,11 @@ p {
 
     max-width: 90vw;
     min-width: 25vw;
-    max-height: 60vh;
+    max-height: 80vh;
 }
 
 img {
-    max-width: 40vw;
+    max-width: 30vw;
 }
 
 img:hover {
