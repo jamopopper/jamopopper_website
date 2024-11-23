@@ -10,7 +10,7 @@
 
 html {
     background: url("images/background.jpeg") no-repeat;
-    background-position: bottom center;
+    background-position: bottom 15% center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
