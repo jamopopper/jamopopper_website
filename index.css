@@ -87,8 +87,8 @@ p {
 
 img {
     max-width: 25vw;
-    max-height: 25vh;
-    margin: 25px;
+    max-height: 20vh;
+    margin: 10px;
 }
 
 img:hover {
