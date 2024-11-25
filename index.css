@@ -10,7 +10,7 @@
 
 html {
     background: url("images/background.jpeg") no-repeat;
-    background-position: bottom 25% center;
+    background-position: bottom 10% center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -19,7 +19,7 @@ html {
 
 body {
     transition: 1s;
-    font-size: 18px;
+    font-size: 24px;
     margin: 1%;
     padding: 8px;
 }
@@ -66,8 +66,23 @@ p {
     margin: auto;
     margin-bottom: 20px;
     padding: 10px 20px;
-    width: max-content;
+    min-width: 50%;
+    max-width: 90%;
+    text-align: center;
 }  
+
+.speech_bubble {
+    position: absolute; /* Position it relative to the viewport */
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center align */ 
+    align-content: bottom;
+}
 
 .image_flex {
     position: absolute; /* Position it relative to the viewport */
@@ -76,21 +91,19 @@ p {
     transform: translateX(-50%); /* Center align */
 
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    align-content: top;
+    align-items: flex-end;
+    align-content: flex-end;
 
 }
 
 .image_flex img {
-    
-
-    min-width: 10%;
-    min-height: 10%;
     max-height: 20vw;
+    max-width: 20vh;
     
     margin: 2vw;
 }
