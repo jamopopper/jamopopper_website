@@ -61,13 +61,15 @@ h3 {
 
 p {
     color: rgba(255, 255, 255, 0.8);
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 25px;
     margin: auto;
     margin-bottom: 20px;
     padding: 10px 20px;
     min-width: 50%;
     max-width: 90%;
+    width: auto;
+    height: auto;
     text-align: center;
 }  
 
