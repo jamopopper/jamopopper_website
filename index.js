@@ -3,9 +3,9 @@ var a = Math.floor(Math.random()*750 + 750);
 
 notify = function() {
     if (window.innerHeight / window.innerWidth > 4/3) {
-        yapper.style.bottom = "20vh";
+        yapper.style.bottom = "20%";
     } else {
-        yapper.style.bottom = "calc(20vh + " + 
+        yapper.style.bottom = "calc(20% + " + 
         (((window.innerHeight / window.innerWidth) - 4/3) * 5).toString() + "vw)";
     }
 }
