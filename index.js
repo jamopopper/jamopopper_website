@@ -44,7 +44,7 @@ interrupt_yapping = function() {
     yapper.src = "images/yapping.png";
     yap_text.style.display = "block";
     yap_box.textContent = yap_array[Math.floor(Math.random() * yap_array.length)];
-    setTimeout(talking_end, 2000);
+    last_timeout = setTimeout(talking_end, 2000);
 }
 
 move_yapper();
