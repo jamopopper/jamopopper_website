@@ -60,4 +60,10 @@ interrupt_yapping = function() {
 move_yapper();
 if (yap_text != undefined) {last_timeout = setTimeout(talking_start,a);}
 
+document.body.style.transform = 'translateZ(0)';
+setTimeout(() => {
+    document.body.style.transform = '';
+}, 0);
+
+
 window.addEventListener("resize", move_yapper)
