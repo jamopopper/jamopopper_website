@@ -1,7 +1,12 @@
 var yapper = document.getElementById("yapping_man");
 var yapper_tail = document.getElementById("whoosh");
 var yap_text = document.getElementsByClassName("speech_bubble")[0];
-var yap_box = yap_text.childNodes[1];
+var yap_box = null;
+if (yap_text == undefined) {
+    console.log("yap_text is undefined")
+} else {
+    yap_box = yap_text.childNodes[1]
+}
 let yap_array = ["That tickles!", "Don't do that!", "I'm not an icon!", "Whoops!", "Hey there!", "Hehe!"];
 var last_timeout;
 var a = Math.floor(Math.random()*750 + 750);
@@ -11,13 +16,13 @@ move_yapper = function() {
     if (window.innerHeight / window.innerWidth > 4/3) {
         yapper.style.bottom = "20%";
         yapper_tail.style.bottom = "20%";
-        yap_text.style.bottom = "35%";
+        if (yap_text != undefined) yap_text.style.bottom = "35%";
     } else {
         yapper.style.bottom = "calc(20% + " + 
         (((window.innerHeight / window.innerWidth) - 4/3) * (-10)).toString() + "vw)";
         yapper_tail.style.bottom = "calc(20% + " + 
         (((window.innerHeight / window.innerWidth) - 4/3) * (-10)).toString() + "vw)";
-        yap_text.style.bottom = "calc(35% + " + 
+        if (yap_text != undefined) yap_text.style.bottom = "calc(35% + " + 
         (((window.innerHeight / window.innerWidth) - 4/3) * (-25)).toString() + "vw)";
     }
 }
@@ -44,8 +49,8 @@ talking_end = function() {
 };
 
 interrupt_yapping = function() {
+    if (yap_text == undefined) return;
     clearTimeout(last_timeout);
-    console.log(yapper.src + " yap sauce");
     if (yapper.src.includes("silent.png")) {yapper.src = "images/yapping.png"}
     yap_text.style.display = "block";
     yap_box.textContent = yap_array[Math.floor(Math.random() * yap_array.length)];
@@ -53,6 +58,6 @@ interrupt_yapping = function() {
 }
 
 move_yapper();
-setTimeout(talking_start,a)
+if (yap_text != undefined) {last_timeout = setTimeout(talking_start,a);}
 
 window.addEventListener("resize", move_yapper)
