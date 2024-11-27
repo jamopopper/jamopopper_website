@@ -1,3 +1,8 @@
+:root {
+    --text-color: rgba(255, 255, 255, 0.9);
+    --background-color: rgba(0, 0, 0, 0.7);
+}
+
 html {
     background: url("images/background.jpeg") no-repeat;
     background-position: bottom 10% center;
@@ -11,50 +16,87 @@ html {
 }
 
 body {
-    transition: 1s;
+    transition: 0.5s;
     font-size: 2em;
     margin: 1%;
     padding: 8px;
 }
 
 h1 {
+    color: var(--text-color);
+    background-color: var(--background-color);
     font-weight: bold;
-    color: rgba(255, 255, 255, 0.9);
-    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 25px;
     margin: auto;
     margin-bottom: 20px;
     padding: 10px 20px;
-    width: max-content;
+    width: fit-content;
+    max-width: 90%;
 }
 
 h2 {
+    color: var(--text-color);
+    background-color: var(--background-color);
     font-weight: bold;
-    color: rgba(255, 255, 255, 0.9);
-    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 25px;
     margin: auto;
     margin-bottom: 20px;
     padding: 10px 20px;
-    width: max-content;
-
+    width: fit-content;
+    max-width: 90%;
 }
 
 h3 {
+    color: var(--text-color);
+    background-color: var(--background-color);
     font-weight: bold;
-    color: rgba(255, 255, 255, 0.9);
-    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 25px;
     margin: auto;
     margin-bottom: 20px;
     padding: 10px 20px;
-    width: max-content;
+    width: fit-content;
+    max-width: 90%;
+}
 
+h4 {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    font-weight: bold;
+    border-radius: 25px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    width: fit-content;
+    max-width: 90%;
+}
+
+h5 {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    font-weight: bold;
+    border-radius: 25px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    width: fit-content;
+    max-width: 90%;
+}
+
+h6 {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    font-weight: bold;
+    border-radius: 25px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    width: fit-content;
+    max-width: 90%;
 }
 
 p {
-    color: rgba(255, 255, 255, 0.8);
-    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--text-color);
+    background-color: var(--background-color);
     border-radius: 25px;
     margin: auto;
     margin-bottom: 20px;
@@ -65,6 +107,67 @@ p {
     height: auto;
     text-align: center;
 }  
+
+ol:not(ol ol), ul:not(ul ul) {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    list-style-position: inside;
+    border-radius: 15px;
+    margin: 10px 20px;
+    padding: 10px 15px;
+    max-width: 90%;
+}
+
+table {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    list-style-position: inside;
+    border-radius: 15px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    max-width: 90%;
+}
+
+th {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    list-style-position: inside;
+    border-radius: 15px;
+    margin: 10px 20px;
+    padding: 10px 15px;
+}
+
+a:link:not(:has(img)) {
+    transition-duration: 0.2s;
+    color: var(--text-color);
+    outline-offset: -3px;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 2px 6px 0px 6px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); /* No shadow initially */
+}
+
+a:visited:not(:has(img)) {
+    transition-duration: 0.2s;
+    color: var(--text-color);
+    outline-offset: -3px;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 2px 6px 0px 6px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); /* No shadow initially */
+}
+
+a:hover:not(:has(img)) {
+    transition-duration: 0.2s;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    outline-offset: -3px;
+    border-radius: 15px;
+    margin: 2px;
+    padding: 2px 6px 0px 6px;
+    box-shadow: 0 0 0 5px var(--background-color); /* Add visual effect */
+}
 
 .speech_bubble {
     position: absolute; /* Position it relative to the viewport */
@@ -99,13 +202,10 @@ p {
 .image_flex img {
     max-height: 20vw;
     max-width: 20vh;
-    
     margin: 2vw;
 }
 
 .yapper {
-    
-
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
@@ -126,43 +226,4 @@ p {
     min-width: 16%;
     min-height: 15%;
     max-height: 20vw;
-}
-
-ol:not(ol ol), ul:not(ul ul) {
-    list-style-position: inside;
-    color: var(--text_secondary);
-    background-color: var(--background_general);
-    border-radius: 5px;
-    margin: 10px 20px;
-    padding: 10px 15px;
-}
-
-a:link:not(:has(img)) {
-    color: var(--text_general);
-    outline: var(--outline_general);
-    text-decoration: none;
-    outline-offset: -3px;
-    border-radius: 5px;
-    margin: 2px;
-    padding: 2px 6px 0px 6px;
-}
-
-a:visited:not(:has(img)) {
-    color: var(--text_important);
-    outline: var(--outline_general);
-    text-decoration: none;
-    outline-offset: -3px;
-    border-radius: 5px;
-    margin: 2px;
-    padding: 2px 6px 0px 6px;
-}
-
-a:hover:not(:has(img)) {
-    background-color: var(--background_important);
-    outline: var(--outline_general);
-    text-decoration: none;
-    outline-offset: -3px;
-    border-radius: 5px;
-    margin: 2px;
-    padding: 2px 6px 0px 6px;
 }
