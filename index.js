@@ -1,6 +1,7 @@
 var yapper = document.getElementById("yapping_man");
 var yapper_tail = document.getElementById("whoosh");
 var yap_text = document.getElementsByClassName("speech_bubble")[0];
+
 var yap_box = null;
 if (yap_text == undefined) {
     console.log("yap_text is undefined")
