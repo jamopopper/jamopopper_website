@@ -10,7 +10,7 @@ if (yap_text == undefined) {
 }
 let yap_array = [
     "That tickles!", "Don't do that!", "I'm not an icon!", "Whoops!", "Hey there!", "Hehe!",
-    "UwU", "OwO", "Yay!", "Ligma Balls", "Sugma Nuts"
+    "UwU", "OwO", "Yay!", "Ligma Balls", "Sugma Nuts", "Xiaohongshu!"
 ];
 var last_timeout;
 var a = Math.floor(Math.random()*750 + 750);
