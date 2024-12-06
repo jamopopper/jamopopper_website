@@ -200,9 +200,9 @@ a:hover:not(:has(img)) {
 }
 
 .image_flex img {
-    max-height: 15vw;
-    max-width: 15vh;
-    margin: 2vw;
+    max-height: 30%;
+    max-width: 15%;
+    margin: 2%;
 }
 
 .yapper {
