@@ -17,14 +17,46 @@ move_yapper = function() {
     if (window.innerHeight / window.innerWidth > 4/3) {
         yapper.style.bottom = "20%";
         yapper_tail.style.bottom = "20%";
-        if (yap_text != undefined) yap_text.style.bottom = "35%";
     } else {
         yapper.style.bottom = "calc(20% + " + 
         (((window.innerHeight / window.innerWidth) - 4/3) * (-10)).toString() + "vw)";
         yapper_tail.style.bottom = "calc(20% + " + 
         (((window.innerHeight / window.innerWidth) - 4/3) * (-10)).toString() + "vw)";
-        if (yap_text != undefined) yap_text.style.bottom = "calc(35% + " + 
-        (((window.innerHeight / window.innerWidth) - 4/3) * (-25)).toString() + "vw)";
+    }
+    console.log("setting yap_box location");
+    if (window.innerHeight / window.innerWidth > 3/2) {
+        console.log("text above yapper");
+        if (yap_text != undefined) {
+            yap_text.style.bottom = "35%";
+            yap_text.style.right = "50%";
+            yap_text.style.transform = "translateX(50%)";
+        }
+    } else if (window.innerHeight / window.innerWidth > 4/3) {
+        console.log("text next to yapper");
+        if (yap_text != undefined) {
+            yap_text.style.bottom = "calc(35% + " + 
+            (((window.innerHeight / window.innerWidth) - 3/2) * (-10)).toString() + "vw)";
+            yap_text.style.right = "50%";
+            yap_text.style.transform = "translateX(50%)";
+        }
+    } else if (window.innerHeight / window.innerWidth > 1) {
+        console.log("text next to yapper");
+        if (yap_text != undefined) {
+            yap_text.style.bottom = "calc(35% + " + 
+            (((window.innerHeight / window.innerWidth) - 3/2) * (-10)).toString() + "vw)";
+            yap_text.style.right =  "calc(40% + " +
+            (((1 - window.innerHeight / window.innerWidth)) * (-30)).toString() + "%)";
+            yap_text.style.transform = "translateX(calc(100% + " + 
+            (((window.innerHeight / window.innerWidth) - 1) * (-150)).toString() + "%)";
+        }
+    } else {
+        console.log("text next to yapper");
+        if (yap_text != undefined) {
+            yap_text.style.bottom = "calc(35% + " + 
+            (((window.innerHeight / window.innerWidth) - 3/2) * (-10)).toString() + "vw)";
+            yap_text.style.right = "40%";
+            yap_text.style.transform = "translateX(100%)";
+        }
     }
 }
 
