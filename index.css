@@ -200,8 +200,8 @@ a:hover:not(:has(img)) {
 }
 
 .image_flex img {
-    max-height: 15vw;
-    max-width: 15vh;
+    max-height: 12vw;
+    max-width: 12vh;
     margin: 2vw;
 }
 
