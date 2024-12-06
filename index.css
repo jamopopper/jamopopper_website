@@ -17,7 +17,7 @@ html {
 
 body {
     transition: 0.5s;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     margin: 1%;
     padding: 8px;
 }
@@ -177,9 +177,9 @@ a:hover:not(:has(img)) {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center align */ 
-    align-content: bottom;
+    align-content: center;
+    width: 30vw;
+    max-width: max-content;
 }
 
 .image_flex {
@@ -188,8 +188,8 @@ a:hover:not(:has(img)) {
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Center align */
 
-    width: 100%;
-    height: max-content;
+    width: max-content;
+    height: min-content;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -200,9 +200,9 @@ a:hover:not(:has(img)) {
 }
 
 .image_flex img {
-    max-height: 30%;
-    max-width: 15%;
-    margin: 2%;
+    max-height: 30vh;
+    max-width: 15vw;
+    margin: 2vw;
 }
 
 .yapper {
