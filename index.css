@@ -178,8 +178,8 @@ a:hover:not(:has(img)) {
     justify-content: center;
     align-items: center;
     align-content: center;
-    width: 30vw;
-    max-width: max-content;
+
+
 }
 
 .image_flex {

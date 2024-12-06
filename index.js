@@ -8,7 +8,10 @@ if (yap_text == undefined) {
 } else {
     yap_box = yap_text.childNodes[1]
 }
-let yap_array = ["That tickles!", "Don't do that!", "I'm not an icon!", "Whoops!", "Hey there!", "Hehe!"];
+let yap_array = [
+    "That tickles!", "Don't do that!", "I'm not an icon!", "Whoops!", "Hey there!", "Hehe!",
+    "UwU", "OwO", "Yay!", "Ligma Balls", "Sugma Nuts"
+];
 var last_timeout;
 var a = Math.floor(Math.random()*750 + 750);
 
@@ -30,6 +33,8 @@ move_yapper = function() {
             yap_text.style.bottom = "35%";
             yap_text.style.right = "50%";
             yap_text.style.transform = "translateX(50%)";
+            yap_text.style.maxWidth = "90vw";
+
         }
     } else if (window.innerHeight / window.innerWidth > 4/3) {
         console.log("text next to yapper");
@@ -38,6 +43,7 @@ move_yapper = function() {
             (((window.innerHeight / window.innerWidth) - 3/2) * (-10)).toString() + "vw)";
             yap_text.style.right = "50%";
             yap_text.style.transform = "translateX(50%)";
+            yap_text.style.maxWidth = "35vw";
         }
     } else if (window.innerHeight / window.innerWidth > 1) {
         console.log("text next to yapper");
@@ -48,6 +54,7 @@ move_yapper = function() {
             (((1 - window.innerHeight / window.innerWidth)) * (-30)).toString() + "%)";
             yap_text.style.transform = "translateX(calc(100% + " + 
             (((window.innerHeight / window.innerWidth) - 1) * (-150)).toString() + "%)";
+            yap_text.style.maxWidth = "35vw";
         }
     } else {
         console.log("text next to yapper");
@@ -56,6 +63,7 @@ move_yapper = function() {
             (((window.innerHeight / window.innerWidth) - 3/2) * (-10)).toString() + "vw)";
             yap_text.style.right = "40%";
             yap_text.style.transform = "translateX(100%)";
+            yap_text.style.maxWidth = "35vw";
         }
     }
 }
