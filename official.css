@@ -17,7 +17,7 @@
     --aurora-green: #a3be8c; /*Main color for strings and attribute values. Used for git/diff additions and success visualizations.*/
     --aurora-purple: #b48ead; /*Used for numbers.*/
 
-  }
+}
 
 html {
     font-family: 'Courier New', monospace;
@@ -26,7 +26,7 @@ html {
 
 body {
     transition: 0.5s;
-    font-size: calc(0.6rem + 0.6vw);
+    font-size: calc(0.5rem + 1vw);
     margin: 1%;
     padding: 8px;
 }
