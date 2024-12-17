@@ -1,0 +1,11 @@
+# My email 
+Contact: mailto:jace_palmer@live.com 
+
+# My PGP Key 
+Encryption: https://jamopopper.net/pgp-pub-key.txt 
+
+# My security.txt file expiration date
+Expires: 2027-12-17T12:00:00Z
+
+# My Canonical address for this file 
+Canonical: https://jamopopper.net/.well-known/security.txt

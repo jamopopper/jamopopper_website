@@ -16,7 +16,6 @@
     --aurora-yellow: #ebcb8b; /*Used for escape characters, regular expressions and markup entities. Used for warnings and git/diff renamings.*/
     --aurora-green: #a3be8c; /*Main color for strings and attribute values. Used for git/diff additions and success visualizations.*/
     --aurora-purple: #b48ead; /*Used for numbers.*/
-
 }
 
 html {
@@ -100,7 +99,7 @@ h6 {
 p {
     color: var(--snow-storm-light);
     background-color: var(--polar-night-darkest);
-    border-radius: 25px;
+    border-radius: 15px;
     margin: auto auto 20px auto;
     padding: 10px 20px;
     min-width: 50%;
@@ -114,7 +113,7 @@ ol:not(ol ol), ul:not(ul ul) {
     background-color: var(--polar-night-darkest);
     list-style-position: inside;
     border-radius: 15px;
-    margin: 10px 20px;
+    margin: auto auto 20px auto;
     padding: 10px 15px;
     min-width: 50%;
 }
@@ -140,21 +139,24 @@ td {
 
 a:link{
     transition-duration: 0.2s;
-    color: var(--snow-storm-lightest);
-    border-radius: 10px;
-    box-shadow: 0 0 0 6px rgba(0, 0, 0, 0); /* No shadow initially */
+    color: var(--frost-blue);
+    text-decoration: none; 
+    border-radius: 60px;
+    box-shadow: 0 0 6px 9px rgba(0, 0, 0, 0); /* No shadow initially */
 }
 
 a:visited {
     transition-duration: 0.2s;
-    color: var(--snow-storm-lightest);
-    border-radius: 10px;
-    box-shadow: 0 0 0 6px rgba(0, 0, 0, 0); /* No shadow initially */
+    color: var(--frost-blue);
+    text-decoration: none; 
+    border-radius: 60px;
+    box-shadow: 0 0 6px 9px rgba(0, 0, 0, 0); /* No shadow initially */
 }
 
 a:hover {
     transition-duration: 0.2s;
     color: var(--snow-storm);
+    text-decoration: none; 
     background-color: var(--polar-night-dark);
     border-radius: 15px;
     box-shadow: 0 0 0 6px var(--polar-night-dark); /* Add visual effect */
