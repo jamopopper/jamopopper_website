@@ -1,5 +1,5 @@
 # My email 
-Contact: mailto:jace_palmer@live.com 
+Contact: mailto:jace_palmer@pm.me
 
 # My PGP Key 
 Encryption: https://jamopopper.net/pgp-pub-key.txt 
